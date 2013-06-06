@@ -2,7 +2,7 @@
 # coding="utf-8"
 
 import urllib
-f=urllib.urlopen("http://hq.stock.sohu.com/viewMyStockListq?cn_601857,cn_600609")
+f=urllib.urlopen("http://hq.stock.sohu.com/viewMyStockListq?cn_000028,cn_600609")
 buf=f.read()
 f.close()
 stocklist=eval(buf[buf.index(',[')+1:buf.index('])')])
